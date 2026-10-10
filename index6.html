@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/html/index.html/index6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Bites | Bakery &amp; Sweets</title>
+<meta name="description" content="Fresh cakes, delicious pastries, Indian sweets, cookies and breads at Sweet Bites Bakery.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--brown:#422315;--dark:#28140c;--gold:#f4bd4f;--cream:#fff8ee;--text:#39251b}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font:inherit}
+header{background:var(--dark);color:white;padding:15px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;position:sticky;top:0;z-index:10}
+.logo{font-family:Georgia,serif;font-size:28px;color:var(--gold);font-weight:bold}
+.logo small{display:block;font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;color:white;text-align:center}
+nav{display:flex;gap:24px;align-items:center}
+nav a:hover{color:var(--gold)}
+.cart{background:var(--gold);color:var(--dark);border:0;border-radius:25px;padding:10px 17px;font-weight:bold}
+.hero{min-height:440px;padding:70px 7%;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(30,15,8,.94),rgba(30,15,8,.25)),url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:560px}
+.eyebrow{color:var(--gold);letter-spacing:3px;font-size:13px;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(38px,6vw,64px);line-height:1.12;margin:15px 0}
+h1 span{color:var(--gold)}
+.hero p{font-size:17px;margin-bottom:25px;max-width:470px}
+.btn{display:inline-block;background:var(--gold);color:var(--dark);border:0;border-radius:30px;padding:13px 25px;font-weight:bold}
+.btn:hover,.cart:hover{background:#ffda83}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:24px 6%;background:white;text-align:center}
+.feature{font-weight:bold}
+.feature span{display:block;font-size:26px}
+section{padding:55px 6%}
+.section-head{text-align:center;margin-bottom:30px}
+.section-head h2{font: bold 36px Georgia,serif;color:var(--brown)}
+.section-head p{color:#806c5d;margin-top:5px}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.category{background:white;border-radius:14px;padding:22px 10px;text-align:center;box-shadow:0 3px 14px #4c2a1510}
+.category span{font-size:35px;display:block}
+.category h3{font-family:Georgia,serif}
+.products{background:#fffdf9}
+.product-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.product{background:white;border:1px solid #f0e4d8;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px #44220d0c;transition:.25s}
+.product:hover{transform:translateY(-5px);box-shadow:0 9px 25px #44220d20}
+.product img{width:100%;height:180px;object-fit:cover;display:block;background:#f2e4d4}
+.product-info{padding:14px}
+.product h3{font-family:Georgia,serif;font-size:17px}
+.product p{font-size:12px;color:#8a786a;margin:5px 0}
+.price{font-weight:bold;font-size:18px;color:#87431f;margin:8px 0}
+.add{width:100%;background:var(--brown);color:white;border:0;border-radius:7px;padding:10px 5px;font-size:13px;font-weight:bold}
+.add:hover{background:#754327}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img{width:100%;height:340px;object-fit:cover;border-radius:16px}
+.about h2{font: bold 38px Georgia,serif;color:var(--brown);margin-bottom:15px}
+.about p{margin-bottom:15px;color:#705c4e}
+.banner{background:linear-gradient(90deg,#35180bdf,#35180b65),url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1500&q=85') center/cover;border-radius:16px;padding:55px 7%;color:white}
+.banner h2{font: bold 38px Georgia,serif;color:var(--gold)}
+.banner p{margin:10px 0 20px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery-grid img{width:100%;height:190px;object-fit:cover;border-radius:12px;transition:.2s}
+.gallery-grid img:hover{transform:scale(1.025)}
+.why{background:#f6eadb;text-align:center}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:25px}
+.why-item span{font-size:30px}
+.why-item h3{font-size:17px;margin:5px}
+footer{background:var(--dark);color:#f7e8da;padding:45px 6% 18px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr 1fr;gap:25px}
+footer h3{color:var(--gold);margin-bottom:12px;font-family:Georgia,serif}
+footer p,footer a{font-size:14px;color:#e6d1c0}
+footer a{display:block;margin:5px 0}
+footer a:hover{color:var(--gold)}
+.copyright{border-top:1px solid #654635;margin-top:30px;padding-top:15px;text-align:center;font-size:12px;color:#cbb5a4}
+#toast{position:fixed;bottom:20px;right:20px;background:#2d5e36;color:white;padding:14px 22px;border-radius:10px;display:none;z-index:30}
+@media(max-width:1000px){
+.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.categories{grid-template-columns:repeat(3,1fr)}
+header{flex-wrap:wrap}
+nav{gap:13px;flex-wrap:wrap}
+}
+@media(max-width:600px){
+header{padding:13px 5%}
+.logo{font-size:23px}
+nav{width:100%;justify-content:center;gap:15px;font-size:13px}
+.hero{padding:55px 6%;min-height:400px}
+.features{grid-template-columns:repeat(2,1fr)}
+section{padding:40px 5%}
+.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.product img{height:145px}
+.product-info{padding:10px}
+.product h3{font-size:15px}
+.categories{grid-template-columns:repeat(2,1fr)}
+.about{grid-template-columns:1fr}
+.about img{height:240px}
+.gallery-grid{grid-template-columns:repeat(2,1fr)}
+.gallery-grid img{height:145px}
+.why-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr 1fr}
+.section-head h2{font-size:29px}
+}
+</style>
+
+
+
+<header>
+  <a class="logo" href="http://127.0.0.1:5500/html/index.html/index6.html#home">Sweet Bites<small>BAKERY &amp; SWEETS</small></a>
+  <nav>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#home">Home</a>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#about">About</a>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#products">Products</a>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#gallery">Gallery</a>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#contact">Contact</a>
+  </nav>
+  <button class="cart" onclick="showCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">FRESHLY BAKED • PREMIUM QUALITY</div>
+    <h1>Delicious Cakes &amp; <span>Traditional Sweets</span></h1>
+    <p>From our bakery to your heart. Fresh cakes, mouth-watering sweets and bakery treats made with love.</p>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#products" class="btn">Explore Our Menu →</a>
+  </div>
+</section>
+
+<div class="features">
+  <div class="feature"><span>🎂</span>Freshly Baked</div>
+  <div class="feature"><span>🍰</span>Premium Quality</div>
+  <div class="feature"><span>🎁</span>Perfect Gifts</div>
+  <div class="feature"><span>❤️</span>Made with Love</div>
+</div>
+
+<section id="categories">
+  <div class="section-head">
+    <h2>Explore Our Categories</h2>
+    <p>Something delicious for every occasion</p>
+  </div>
+  <div class="categories">
+    <div class="category"><span>🎂</span><h3>Cakes</h3></div>
+    <div class="category"><span>🧁</span><h3>Pastries</h3></div>
+    <div class="category"><span>🍬</span><h3>Indian Sweets</h3></div>
+    <div class="category"><span>🍞</span><h3>Fresh Bread</h3></div>
+    <div class="category"><span>🍪</span><h3>Cookies</h3></div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-head">
+    <h2>Our Special Products</h2>
+    <p>Handcrafted treats to make your day sweeter</p>
+  </div>
+
+  <div class="product-grid">
+    <article class="product">
+      <img src="./index6_files/photo-1578985545062-69928b1d9587" alt="Chocolate cake" loading="lazy">
+      <div class="product-info"><h3>Chocolate Cake</h3><p>Rich, creamy chocolate</p><div class="price">₹499</div><button class="add" onclick="addToCart('Chocolate Cake',499)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1586985289688-ca3cf47d3e6e" alt="Vanilla cake" loading="lazy">
+      <div class="product-info"><h3>Vanilla Cake</h3><p>Soft and delicious</p><div class="price">₹449</div><button class="add" onclick="addToCart('Vanilla Cake',449)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1571115177098-24ec42ed204d" alt="Chocolate pastry" loading="lazy">
+      <div class="product-info"><h3>Black Forest</h3><p>Chocolate and cream</p><div class="price">₹549</div><button class="add" onclick="addToCart('Black Forest Cake',549)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1666190092159-5d8a4f9d4c9c" alt="Gulab jamun" loading="lazy">
+      <div class="product-info"><h3>Gulab Jamun</h3><p>Traditional Indian sweet</p><div class="price">₹220</div><button class="add" onclick="addToCart('Gulab Jamun',220)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1571506165871-ee72a35bc9d4" alt="Rasgulla sweet" loading="lazy">
+      <div class="product-info"><h3>Rasgulla</h3><p>Soft and juicy</p><div class="price">₹200</div><button class="add" onclick="addToCart('Rasgulla',200)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1606313564200-e75d5e30476c" alt="Chocolate dessert" loading="lazy">
+      <div class="product-info"><h3>Sweet Treats</h3><p>A little box of happiness</p><div class="price">₹250</div><button class="add" onclick="addToCart('Sweet Treats',250)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1519676867240-f03562e64548" alt="Indian dessert assortment" loading="lazy">
+      <div class="product-info"><h3>Festive Sweets</h3><p>Perfect for celebrations</p><div class="price">₹350</div><button class="add" onclick="addToCart('Festive Sweets',350)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1499636136210-6f4ee915583e" alt="Chocolate chip cookies" loading="lazy">
+      <div class="product-info"><h3>Cookies</h3><p>Crunchy and yummy</p><div class="price">₹120</div><button class="add" onclick="addToCart('Cookies',120)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1486427944299-d1955d23e34d" alt="Cupcakes and pastries" loading="lazy">
+      <div class="product-info"><h3>Cream Pastry</h3><p>Light, soft and creamy</p><div class="price">₹150</div><button class="add" onclick="addToCart('Cream Pastry',150)">🛒 Add to Cart</button></div>
+    </article>
+    <article class="product">
+      <img src="./index6_files/photo-1509440159596-0249088772ff" alt="Freshly baked bread" loading="lazy">
+      <div class="product-info"><h3>Fresh Bread</h3><p>Soft, golden and fresh</p><div class="price">₹60</div><button class="add" onclick="addToCart('Fresh Bread',60)">🛒 Add to Cart</button></div>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <img src="./index6_files/photo-1555507036-ab1f4038808a" alt="Bakery display with freshly baked products" loading="lazy">
+    <div>
+      <div class="eyebrow">OUR STORY</div>
+      <h2>Made Fresh, Shared with Love</h2>
+      <p>Welcome to Sweet Bites Bakery &amp; Sweets, where every bite brings a little happiness. We believe that good food brings people together.</p>
+      <p>From birthday cakes and creamy pastries to traditional Indian sweets and fresh bread, there is something for everyone.</p>
+      <a href="http://127.0.0.1:5500/html/index.html/index6.html#contact" class="btn">Get in Touch →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="banner">
+    <div class="eyebrow">MAKE EVERY MOMENT SWEETER</div>
+    <h2>Sweetness for Every Celebration!</h2>
+    <p>Birthdays, festivals, family gatherings or just because — celebrate with your favourite treats.</p>
+    <a href="http://127.0.0.1:5500/html/index.html/index6.html#products" class="btn">Explore Products →</a>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-head">
+    <h2>Our Sweet Gallery</h2>
+    <p>A feast for your eyes and your taste buds</p>
+  </div>
+  <div class="gallery-grid">
+    <img src="./index6_files/photo-1563729784474-d77dbb933a9e" alt="Bakery dessert" loading="lazy">
+    <img src="./index6_files/photo-1550617931-e17a7b70dce2" alt="Fresh cupcakes" loading="lazy">
+    <img src="./index6_files/photo-1551024506-0bccd828d307" alt="Donuts" loading="lazy">
+    <img src="./index6_files/photo-1509365465985-25d11c17e812" alt="Fresh baked pastries" loading="lazy">
+  </div>
+</section>
+
+<section class="why">
+  <div class="section-head">
+    <h2>Why Choose Sweet Bites?</h2>
+    <p>Quality, care and happiness in every bite</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-item"><span>🌿</span><h3>Quality Ingredients</h3><p>Carefully selected ingredients</p></div>
+    <div class="why-item"><span>✨</span><h3>Fresh Every Day</h3><p>Made for your special moments</p></div>
+    <div class="why-item"><span>🎂</span><h3>Custom Cakes</h3><p>Celebrate your way</p></div>
+    <div class="why-item"><span>😊</span><h3>Happy Customers</h3><p>Service with a smile</p></div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div><div class="logo">Sweet Bites<small>BAKERY &amp; SWEETS</small></div><p style="margin-top:15px">Freshly baked happiness, made with love. Every celebration deserves something sweet.</p></div>
+    <div><h3>Quick Links</h3><a href="http://127.0.0.1:5500/html/index.html/index6.html#home">Home</a><a href="http://127.0.0.1:5500/html/index.html/index6.html#about">About Us</a><a href="http://127.0.0.1:5500/html/index.html/index6.html#products">Products</a><a href="http://127.0.0.1:5500/html/index.html/index6.html#gallery">Gallery</a></div>
+    <div><h3>Contact Us</h3><p>📞 Phone: Add your number</p><p>✉️ Email: Add your email</p><p>📍 Address: Add your shop address</p><p>🕒 Hours: Add your opening hours</p></div>
+    <div><h3>Follow Us</h3><a href="http://127.0.0.1:5500/html/index.html/index6.html#contact">Instagram</a><a href="http://127.0.0.1:5500/html/index.html/index6.html#contact">Facebook</a><a href="http://127.0.0.1:5500/html/index.html/index6.html#contact">WhatsApp</a></div>
+  </div>
+  <div class="copyright">© <span id="year">2026</span> Sweet Bites Bakery &amp; Sweets. All rights reserved.</div>
+</footer>
+
+<div id="toast" role="status"></div>
+
+<script>
+let cart = [];
+let toastTimer;
+
+function addToCart(name, price) {
+  cart.push({name, price});
+  document.getElementById("cartCount").textContent = cart.length;
+  document.querySelector(".cart").setAttribute("aria-label", "Shopping cart with " + cart.length + " items");
+  const toast = document.getElementById("toast");
+  toast.textContent = name + " added to your cart!";
+  toast.style.display = "block";
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.style.display = "none", 2200);
+}
+
+function showCart() {
+  if (cart.length === 0) {
+    alert("Your cart is empty! Add something delicious first.");
+    return;
+  }
+
+  const items = cart.map((item, i) =>
+    (i + 1) + ". " + item.name + " — ₹" + item.price
+  ).join("\n");
+
+  const total = cart.reduce((sum, item) => sum + item.price, 0);
+
+  alert("YOUR SWEET BITES CART\n\n" + items +
+        "\n\nTotal: ₹" + total +
+        "\n\nThis is a demo cart. Online checkout is not connected yet.");
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
