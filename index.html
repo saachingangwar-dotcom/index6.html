@@ -161,44 +161,159 @@ section{padding:40px 5%}
 
   <div class="product-grid">
     <article class="product">
-      <img src="./index6_files/photo-1578985545062-69928b1d9587.jpg" alt="Chocolate cake" loading="lazy">
-      <div class="product-info"><h3>Chocolate Cake</h3><p>Rich, creamy chocolate</p><div class="price">₹499</div><button class="add" onclick="addToCart('Chocolate Cake',499)">🛒 Add to Cart</button></div>
-    </article>
+      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Special Products</title>
+  <style>
+    /* basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Product Grid Layout */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Product Card Styling */
+    .product {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .product-info h3 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .product-info p {
+      margin: 0 0 10px 0;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .add-to-cart-btn {
+      width: 100%;
+      background-color: #4a1525; /* Theme dark brown/burgundy color */
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #611c30;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Our Special Products</h2>
+    <p>Handcrafted treats to make your day sweeter</p>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- 1. Chocolate Cake -->
     <article class="product">
-      <img src="./index6_files/photo-1586985289688-ca3cf47d3e6e" alt="Vanilla cake" loading="lazy">
-      <div class="product-info"><h3>Vanilla Cake</h3><p>Soft and delicious</p><div class="price">₹449</div><button class="add" onclick="addToCart('Vanilla Cake',449)">🛒 Add to Cart</button></div>
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Chocolate Cake" loading="lazy">
+      <div class="product-info">
+        <h3>Chocolate Cake</h3>
+        <p>Rich, creamy chocolate</p>
+        <div class="price">₹499</div>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
     </article>
+
+    <!-- 2. Vanilla Cake -->
     <article class="product">
-      <img src="./index6_files/photo-1571115177098-24ec42ed204d" alt="Chocolate pastry" loading="lazy">
-      <div class="product-info"><h3>Black Forest</h3><p>Chocolate and cream</p><div class="price">₹549</div><button class="add" onclick="addToCart('Black Forest Cake',549)">🛒 Add to Cart</button></div>
+      <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500" alt="Vanilla Cake" loading="lazy">
+      <div class="product-info">
+        <h3>Vanilla Cake</h3>
+        <p>Soft and delicious</p>
+        <div class="price">₹449</div>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
     </article>
+
+    <!-- 3. Black Forest -->
     <article class="product">
-      <img src="./index6_files/photo-1666190092159-5d8a4f9d4c9c" alt="Gulab jamun" loading="lazy">
-      <div class="product-info"><h3>Gulab Jamun</h3><p>Traditional Indian sweet</p><div class="price">₹220</div><button class="add" onclick="addToCart('Gulab Jamun',220)">🛒 Add to Cart</button></div>
+      <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500" alt="Black Forest" loading="lazy">
+      <div class="product-info">
+        <h3>Black Forest</h3>
+        <p>Chocolate and cream</p>
+        <div class="price">₹549</div>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
     </article>
+
+    <!-- 4. Gulab Jamun -->
     <article class="product">
-      <img src="./index6_files/photo-1571506165871-ee72a35bc9d4" alt="Rasgulla sweet" loading="lazy">
-      <div class="product-info"><h3>Rasgulla</h3><p>Soft and juicy</p><div class="price">₹200</div><button class="add" onclick="addToCart('Rasgulla',200)">🛒 Add to Cart</button></div>
+      <img src="https://images.unsplash.com/photo-1666190092159-5d8a4f9d4c9c?w=500" alt="Gulab Jamun" loading="lazy">
+      <div class="product-info">
+        <h3>Gulab Jamun</h3>
+        <p>Traditional Indian sweet</p>
+        <div class="price">₹220</div>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
     </article>
+
+    <!-- 5. Chocolate Chip Cookies -->
     <article class="product">
-      <img src="./index6_files/photo-1606313564200-e75d5e30476c" alt="Chocolate dessert" loading="lazy">
-      <div class="product-info"><h3>Sweet Treats</h3><p>A little box of happiness</p><div class="price">₹250</div><button class="add" onclick="addToCart('Sweet Treats',250)">🛒 Add to Cart</button></div>
-    </article>
-    <article class="product">
-      <img src="./index6_files/photo-1519676867240-f03562e64548" alt="Indian dessert assortment" loading="lazy">
-      <div class="product-info"><h3>Festive Sweets</h3><p>Perfect for celebrations</p><div class="price">₹350</div><button class="add" onclick="addToCart('Festive Sweets',350)">🛒 Add to Cart</button></div>
-    </article>
-    <article class="product">
-      <img src="./index6_files/photo-1499636136210-6f4ee915583e" alt="Chocolate chip cookies" loading="lazy">
-      <div class="product-info"><h3>Cookies</h3><p>Crunchy and yummy</p><div class="price">₹120</div><button class="add" onclick="addToCart('Cookies',120)">🛒 Add to Cart</button></div>
-    </article>
-    <article class="product">
-      <img src="./index6_files/photo-1486427944299-d1955d23e34d" alt="Cupcakes and pastries" loading="lazy">
-      <div class="product-info"><h3>Cream Pastry</h3><p>Light, soft and creamy</p><div class="price">₹150</div><button class="add" onclick="addToCart('Cream Pastry',150)">🛒 Add to Cart</button></div>
-    </article>
-    <article class="product">
-      <img src="./index6_files/photo-1509440159596-0249088772ff" alt="Freshly baked bread" loading="lazy">
-      <div class="product-info"><h3>Fresh Bread</h3><p>Soft, golden and fresh</p><div class="price">₹60</div><button class="add" onclick="addToCart('Fresh Bread',60)">🛒 Add to Cart</button></div>
+		
     </article>
   </div>
 </section>
